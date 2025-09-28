@@ -6,14 +6,13 @@
 ### 环境配置
 - python（建议3.10以上）
 - pytorch（建议最新）
-- os
+- matplotlib
 ### 项目结构
 ```
 /mini-transformer/
     ├── /train_result/              #训练结果
         ├── epoch_loss_curve.png    #损失曲线
         ├── training_losses.json    #损失数值保存
-        ├── final_model.pth         #模型保存文件
         ├── part_of_test.png        #部分测试结果
     ├── config.py                   #参数配置
     ├── dataset.py                  #数据集构建
@@ -28,7 +27,7 @@
 ### 使用说明
 - 按照环境配置安装相应包
 - 在config.py里设置训练参数
-- 运行train.py文件进行训练，模型结果保存在train_result文件夹
+- 运行train.py文件进行训练，模型结果保存在train_result文件夹里的`final_model.pth`
 - 运行test.py文件进行测试，测试对比结果在test_result.txt文件
 ---
 #### Transformer模型（transformer.py）
